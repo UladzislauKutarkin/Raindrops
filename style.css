@@ -1,0 +1,96 @@
+@font-face {
+    font-family: "Nerko";
+    src: url("assets/fonts/NerkoOne-Regular.ttf");
+}
+:root {
+    --main-color: #399999;
+    --numbers-color: #362b47;
+
+}
+
+body {
+    margin:0 auto;
+    background: linear-gradient(#c2ecec, #7ed5e7, #77a0f1) no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+}
+.header h1{
+    font-family: Nerko;
+    text-align: center;
+    font-size: 100px;
+    color: var(--main-color);
+}
+.game__description {
+    text-align: center;
+    font-family: Nerko;
+    font-size: 24px;
+}
+.drops {
+    display: flex;
+    justify-content: center;
+}
+
+.drops__drop {
+    background-image: url(assets/img/drop.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 33%;
+    max-width: 150px;
+    height: 300px;
+}
+
+.drops__drop--main-drop {
+    background-size: 100%;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--numbers-color);
+}
+
+.drops__numbers,
+.drops__plus {
+    margin-top: 90px;
+    font-family: Nerko;
+}
+
+.drops__numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.drops__drop--right-drop {
+    background-position-y: top;
+    background-position-x: 10%;
+}
+
+.choose__buttons {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.choose__buttons img {
+    width: 20px;
+    height: 20px;
+}
+
+.how__to__play, .play__field {
+    margin-right: 25px;
+    font-family: Nerko;
+    font-size: 30px;
+    border-radius: 30%;
+    border: 1px var(--main-color) solid;
+    background: linear-gradient(#77a0f1, #204545);
+    cursor: pointer;
+}
+
+.how__to__play:hover {
+    background: linear-gradient(#041c6c, #087272);
+}
+
+.play__field:hover {
+    background: linear-gradient(#041c6c, #087272);
+}
