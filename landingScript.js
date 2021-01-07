@@ -3,4 +3,8 @@ let howToPlay = document.querySelector('.how__to__play'),
 
 howToPlay.addEventListener('click', (e)=> {
     document.location='./tutorial.html'
+});
+
+startGame.addEventListener('click', (e)=>{
+    document.location='./playing-field.html'
 })
