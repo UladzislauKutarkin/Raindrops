@@ -1,0 +1,210 @@
+@font-face {
+    font-family: "Nerko";
+    src: url("assets/fonts/NerkoOne-Regular.ttf");
+}
+.play__field {
+    position: relative;
+    background: linear-gradient(#fff, #b8e1ec, #6bdde7);
+    width: 70%;
+    overflow: hidden;
+}
+.control {
+    background: #087272;
+    width: 30%;
+
+}
+
+main {
+    height: 100vh;
+    display: flex;
+}
+
+body{
+    margin: 0 auto;
+    font-family: Nerko;
+}
+
+.score__field {
+    border: 1px solid #d7d7d7;
+    border-bottom-left-radius: 100% 40px;
+    border-bottom-right-radius: 100% 40px;
+    background: #d7d7d7;
+    display: flex;
+    justify-content: center;
+    font-size: 80px;
+}
+
+.score__field img {
+    width: 25%;
+    height: 25%;
+}
+
+
+
+.rock {
+    position: absolute;
+    bottom: 60px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 25%;
+}
+
+.control {
+    width: 25%;
+    background-color: #867b7b;
+}
+
+.control__calculator {
+    user-select: none;
+    margin: 50px auto;
+    width: 90%;
+    background-color: orange;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+
+.control__display {
+    width: 100%;
+    height: 100px;
+    font-size: 50px;
+    line-height: 100px;
+    text-align: center;
+}
+
+.control__button {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    line-height: 60px;
+    width: 25%;
+    height: 60px;
+    background-color: #c67474;
+    outline: 1px solid #d7874e;
+}
+
+.control__button:hover {
+    background-color: #db9292;
+}
+
+.control__button--clear,
+.control__button--enter,
+.control__button--delete {
+    font-size: 20px;
+}
+
+.control__button--clear,
+.control__button--enter {
+    height: 120px;
+}
+
+.control__button--delete,
+.control__button--zero,
+.control__button--six,
+.control__button--four,
+.control__button--five {
+    margin-top: -60px;
+}
+
+.control__button--zero {
+    width: 50%;
+}
+
+.control__button--one,
+.control__button--two,
+.control__button--three {
+    margin-top: -120px;
+}
+
+.raindrop {
+    background-image: url("assets/img/drop.png");
+    display: flex;
+    position: absolute;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.bonus__drop {
+    background-image: url("assets/img/pngaaa.com-1298565.png");
+    display: flex;
+    position: absolute;
+    background-size: contain;
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.bonus__symbol {
+    padding-top:20px;
+    padding-right: 10px;
+}
+
+
+
+.drop__wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 80px;
+    left:32px;
+}
+
+.hidden {
+    display: none;
+}
+
+.symbol {
+    padding-top:20px;
+    padding-right: 10px;
+}
+
+.wave {
+    background: #7ed5e7;
+    opacity: 0.6;
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    transition: height 500ms;
+}
+
+.dropAnimation {
+    animation-name: dropAnimations;
+    animation-duration: 12s;
+}
+
+.rightAnswer {
+
+    animation-name: rightAnswerAnim;
+    animation-duration: 2s;
+}
+
+@keyframes dropAnimations {
+    from {
+        top:0px;
+    }
+
+    to {
+        top:800px
+    }
+}
+
+@keyframes rightAnswerAnim {
+    from {
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+    to {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+}

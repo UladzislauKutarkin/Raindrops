@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raindrops</title>
+    <link rel="stylesheet" href="playing_field_style.css">
+</head>
+<body>
+<main>
+    <section class="play__field">
+        <img class="rock" src="assets/img/rock.png">
+        <div class="raindrop dropAnimation" id="drop">
+            <div class="drop__wrapper">
+                <div class="symbol">
+                </div>
+                <div class="number__wrapper">
+                    <div class="number__first">
+                    </div>
+                    <div class="number__second">
+                        9
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bonus__drop hidden">
+            <div class="drop__wrapper">
+                <div class="bonus__symbol">
+                </div>
+                <div class="number__wrapper">
+                    <div class="bonus__number__first">
+                    </div>
+                    <div class="bonus__number__second">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wave">
+        </div>
+    </section>
+    <section class="control">
+        <div class="score__field">
+            <img src="assets/img/star.png">
+            <span class="score__field__Text">Score: <span class="score__counter"> </span></span>
+        </div>
+        <div class="control__calculator">
+            <div class="control__display">0</div>
+            <div class="control__button">7</div>
+            <div class="control__button">8</div>
+            <div class="control__button">9</div>
+            <div class="control__button control__button--clear">Clear</div>
+            <div class="control__button control__button--four">4</div>
+            <div class="control__button control__button--five">5</div>
+            <div class="control__button control__button--six">6</div>
+            <div class="control__button control__button--enter">Enter</div>
+            <div class="control__button control__button--one">1</div>
+            <div class="control__button control__button--two">2</div>
+            <div class="control__button control__button--three">3</div>
+            <div class="control__button control__button--zero">0</div>
+            <div class="control__button control__button--delete">Del</div>
+        </div>
+    </section>
+    <audio class="drop__sound" src="assets/sounds/drop%20sound.mp3">
+    </audio>
+    <audio class="new__drop__sound" src="assets/sounds/New%20drop%20sound-%5BAudioTrimmer.com%5D.mp3">
+    </audio>
+    <audio src="assets/sounds/wavesound.wav" autoplay loop>
+    </audio>
+
+</main>
+<script src="tutorial.js">
+
+</script>
+</body>
+
+</html>
