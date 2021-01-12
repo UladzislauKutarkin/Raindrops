@@ -177,6 +177,4 @@ window.onload = function () {
     setInterval(bonusDropAppear, 20000);
 
 
-
-
     }

@@ -177,7 +177,13 @@ body{
 
 .dropAnimation {
     animation-name: dropAnimations;
-    animation-duration: 8s;
+    animation-duration: 12s;
+}
+
+.rightAnswer {
+
+    animation-name: rightAnswerAnim;
+    animation-duration: 2s;
 }
 
 @keyframes dropAnimations {
@@ -187,5 +193,18 @@ body{
 
     to {
         top:800px
+    }
+}
+
+@keyframes rightAnswerAnim {
+    from {
+        width: 200px;
+        height: 200px;
+        opacity: 1;
+    }
+    to {
+        width: 0;
+        height: 0;
+        opacity: 0;
     }
 }
